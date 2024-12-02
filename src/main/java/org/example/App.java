@@ -18,6 +18,8 @@ public class App {
     public static void app(Properties configuration) {
         while (true) {
             System.out.println("hello..." + configuration.get("app.name"));
+            String[] args = {""};
+            ElasticsearchWriter.write();
 
             try {
                 TimeUnit.SECONDS.sleep(4);
