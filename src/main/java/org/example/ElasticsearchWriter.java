@@ -28,7 +28,11 @@ public class ElasticsearchWriter {
 
             // Create an IndexRequest
 //            IndexRequest request = new IndexRequest("books").id("1").source(document, XContentType.JSON);
-            IndexRequest request = new IndexRequest("books", "_doc", "1").source(document, XContentType.JSON);
+//            IndexRequest request = new IndexRequest("books", "_doc", "1").source(document, XContentType.JSON);
+            IndexRequest request = new IndexRequest("books",
+                                                    "_doc"
+                                                    ).source(document, XContentType.JSON);
+
 
 
             // Index the document

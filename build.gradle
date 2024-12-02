@@ -13,6 +13,8 @@ dependencies {
     implementation 'org.apache.kafka:kafka-clients:2.8.2'
 
     implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:6.8.23'
+    implementation 'org.elasticsearch.client:elasticsearch-rest-client-sniffer:6.8.23'
+//    org.elasticsearch.client.indices.GetAliasesRequest
     implementation 'org.apache.httpcomponents:httpclient:4.5.13'
 
     testImplementation platform('org.junit:junit-bom:5.10.0')
